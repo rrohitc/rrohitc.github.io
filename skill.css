@@ -1,7 +1,12 @@
 
 .skill{
-    margin: 0vh  28vh;
-    align-items: center;
+  background:rgb(255,248,220) ;
+}
+  .skill .new{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vw 5vw;
+
   }
   .skill .new .effect-img{
     padding: 3vh;
@@ -36,11 +41,10 @@
     .skill {
         max-width: 960px;
     }
-  }
-  
-  @media (min-width: 1200px) {
-    .skill {
-        max-width: 1140px;
+  @media (min-width:1140px){
+      .skill{
+        max-width:1920px;
+      }
     }
   }
   /*
@@ -88,11 +92,11 @@
   }
   
   .effect-1 {
+    background-color: white;
     border-radius: 5px;
     position: relative;
-    margin-bottom: 30px;
     overflow: hidden;
-    margin: 45px 15px 5px 15px;
+    margin: 1vw 1.5vw;
     padding: 5px 25px 5px 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }

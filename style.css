@@ -32,7 +32,14 @@ section{
   cursor: pointer;
   user-select: none;
 }
-
+.circle{
+  width: 40vw;
+  height: 40vw;
+  margin-top: -50vw;
+  margin-left: -20vw;
+  border-radius:25vw;
+  background-color: blue;
+}
 .heading{
   text-align: center;
   font-size: 4rem;
@@ -91,6 +98,9 @@ section{
   background-color:gold ;
   border-radius: 5px;
   color:black;
+}
+.navbar-toggler{
+  display: none;
 }
 
 #menu-btn {
@@ -252,20 +262,27 @@ section{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap:3rem;
+  position: relative;
 }
 
 .footer .box-container .box{
   text-align: center;
+  position: relative;
 }
 
-.footer .box-container .box i{
-  height: 5rem;
-  width: 5rem;
+.footer .box-container .box .bi{
+  height: 3vw;
+  width: 3vw;
   border-radius: 50%;
-  line-height: 5rem;
-  font-size: 2rem;
+  margin-left: 6.3vw;
+  line-height: 2vw;
+  font-size: 2vw;
   background-color:darkorange;
   color:black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .footer .box-container .box h3{
@@ -307,14 +324,15 @@ section{
 
   #menu-btn{
      font-size: 4.5vw;
-     display: block;
      transition: .2s linear;
-  }
-    #menu-btn.bi-x{
-      font-size:4.5vw;
      transform: rotate(180deg);
-     .bi-list::before{display: none;}
-  } 
+     display: block;
+  }
+  .navbar-toggler{
+    font-size: 5vw;
+    display: block;
+  }
+  
   .header .nav{
      position: absolute;
      top:99%; left:0; right:0;
@@ -356,6 +374,29 @@ section{
     margin-top: 3.5vw;
     margin-left:30vw;
     font-size: 2vw;
+  }
+  .footer .box-container .box .h3{
+    font-size: 2vw;
+    color: whitesmoke;
+    margin-top:-3vw;
+  }
+  .footer #lin{
+    margin-top:6vw;
+  }
+  .footer .box-container .box p{
+    margin-top:-1vw;
+    margin-bottom:7vw ;
+  }
+  .footer .box-container .box .bi{
+    font-size: 5vw;
+    width: 8vw;
+    height: 8vw;
+    margin-top:3.5vw;
+    margin-bottom: -13.5vw;
+  }
+  .footer .box .a{
+    font-size: 24vw;
+    margin-bottom: -5vw;
   }
 }
 @media (max-width:450px){

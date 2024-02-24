@@ -109,7 +109,7 @@
     top: calc(100% - 60px);
     left: 0;
     text-align: center;
-    background: rgb(253, 70, 14,0.7);
+    background:rgb(253, 70, 14,0.7);
     transition: .5s;
   }
   .effect-1:hover .effect-text-hm{
